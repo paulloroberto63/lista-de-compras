@@ -1,0 +1,150 @@
+header {
+    display: flex;
+    justify-content: center;
+    padding-block-start: 1.5rem;
+}
+
+.buy {
+   width: 31rem;
+   margin: 3.8rem auto;
+    & h3 {
+        margin-top: 1rem;
+        font: var(--font-title);
+    }
+}
+
+main {
+    width: 32.5rem;
+    margin-inline: auto;
+    
+   
+    & form {
+    display: flex;
+    gap: 1rem;
+    
+    
+    & input {
+        width: 23rem;
+        padding: .5rem 1.1rem;
+            border-radius: .6rem;
+            border: 2px solid var(--border-primary);
+            font: var(--font-label);
+          
+       &:hover {
+            border: 2px solid var(--border-hover);
+           }
+        
+        &:focus {
+            outline: 2px solid var(--color-brand);
+            border: none;
+           }
+        
+        }
+    }
+      & button {
+        font: var(--font-label);
+        padding: .5rem;
+        border-radius: .7rem;
+        border: none;
+        background-color: var(--color-brand);
+        color: var(--always-white);
+        cursor: pointer;
+      
+    &:hover {
+        background-color: var(--color-brand-hover);
+    }
+}
+
+& .list {
+    margin-top: 2.5rem;
+    display: flex;
+    font: var(--font-paragraph);
+    flex-direction: column;
+    gap: .7rem;
+
+& .list-inner {
+    background-color: var(--always-white);
+    display: flex;
+    justify-content: space-between;
+    padding: .6rem .7rem;
+    border-radius: .7rem;
+    
+
+ & .checkbox {
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+    position: relative;
+    
+    & [type="checkbox"] {
+        all: unset;
+        position: absolute;
+        inset: 0;
+        cursor: pointer;
+        }
+
+    & .checkbox-image {
+        background-image: url(/assets/checkbox.svg);
+        height: 1.06rem;
+        width: 1rem;
+        }
+
+    &:has(:checked) .checkbox-image {
+        background-image: url(/assets/state=selected.svg);
+        }
+    }
+    
+    & .remove {
+        cursor: pointer;
+    }    
+}
+}
+
+& .item-remove {
+  margin-top: 2.25rem;
+  background-color: var(--color-danger);
+  font: var(--font-label);
+  color: var(--always-white);
+  padding: .7rem .7rem;
+  border-radius: .7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  & .notification {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+  }
+
+ & .exit-notification{
+    cursor: pointer;
+ }
+}
+}
+
+@media (width < 90rem) {
+    header {
+        display: none;
+    }
+
+    .buy {
+        padding-inline: 2rem;
+    }
+
+    main {
+        width: 20.3rem;
+        display: flex;
+        flex-direction: column;
+        
+
+    & form {
+        display: flex;
+        flex-direction: column;
+
+    & input {
+        width: 20.3rem;
+    }
+}
+}
+}

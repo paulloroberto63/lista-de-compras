@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>Quicklist</title>
+    <link rel="stylesheet" href="/styles/index.css">
+</head>
+<body>
+ <header>
+    <img src="/assets/logo.svg" alt="">
+ </header>
+ <div class="buy">
+  <img src="/assets/link button.svg" alt="">
+  <h3>Compras da semana</h3>
+ </div>
+ <main>
+  <form>
+    <input type="text" placeholder="Adicione um novo item" id="item">
+    <button id="add-item">Adicionar item</button>
+  </form>
+ <div class="list">
+  <div class="list-inner" id="guest1">
+   <div class="checkbox">
+    <div class="checkbox-image"></div>
+      <input type="checkbox" name="check">
+      <label for="check">Pão de forma</label>
+   </div>
+   <div class="remove">
+   <img src="/assets/Frame.svg" alt="">
+  </div>
+  </div>
+  <div class="list-inner" id="guest2">
+    <div class="checkbox">
+     <div class="checkbox-image"></div>
+       <input type="checkbox" name="check">
+       <label for="check">Café preto</label>
+    </div>
+    <div class="remove">
+    <img src="/assets/Frame.svg" alt="">
+   </div>
+   </div>
+   <div class="list-inner" id="guest2">
+    <div class="checkbox">
+     <div class="checkbox-image"></div>
+       <input type="checkbox" name="check">
+       <label for="check">Suco de laranja</label>
+    </div>
+    <div class="remove">
+    <img src="/assets/Frame.svg" alt="">
+   </div>
+   </div>
+   <div class="list-inner" id="guest2">
+    <div class="checkbox">
+     <div class="checkbox-image"></div>
+       <input type="checkbox" name="check">
+       <label for="check">Bolacha</label>
+    </div>
+    <div class="remove">
+    <img src="/assets/Frame.svg" alt="">
+   </div>
+   </div>
+ </div>
+ <footer class="item-remove">
+  <div class="notification">
+   <img src="/assets/warning-circle-filled.svg" alt="">
+   <span>O item foi removido da lista</span>
+  </div>
+  <div class="exit-notification">
+    <img src="/assets/delete-small.svg" alt="">
+  </div>
+ </footer>
+</main>
+
+<script src="scripts.js"></script>
+</body>
+</html>
