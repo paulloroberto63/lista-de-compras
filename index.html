@@ -19,61 +19,30 @@
  </div>
  <main>
   <form>
-    <input type="text" placeholder="Adicione um novo item" id="item">
+    <input type="text" placeholder="Adicione um novo item" id="item" required>
     <button id="add-item">Adicionar item</button>
   </form>
- <div class="list">
-  <div class="list-inner" id="guest1">
-   <div class="checkbox">
-    <div class="checkbox-image"></div>
-      <input type="checkbox" name="check">
-      <label for="check">Pão de forma</label>
-   </div>
+ <div class="list" id="list">
+  <div id="guest1">
+    <div>
+    <input type="checkbox" name="check">
+    <label for="check">Pão de forma</label>
+    </div>
    <div class="remove">
-   <img src="/assets/Frame.svg" alt="">
+   <img src="/assets/recycle.svg" alt="">
   </div>
-  </div>
-  <div class="list-inner" id="guest2">
-    <div class="checkbox">
-     <div class="checkbox-image"></div>
-       <input type="checkbox" name="check">
-       <label for="check">Café preto</label>
-    </div>
-    <div class="remove">
-    <img src="/assets/Frame.svg" alt="">
-   </div>
-   </div>
-   <div class="list-inner" id="guest2">
-    <div class="checkbox">
-     <div class="checkbox-image"></div>
-       <input type="checkbox" name="check">
-       <label for="check">Suco de laranja</label>
-    </div>
-    <div class="remove">
-    <img src="/assets/Frame.svg" alt="">
-   </div>
-   </div>
-   <div class="list-inner" id="guest2">
-    <div class="checkbox">
-     <div class="checkbox-image"></div>
-       <input type="checkbox" name="check">
-       <label for="check">Bolacha</label>
-    </div>
-    <div class="remove">
-    <img src="/assets/Frame.svg" alt="">
-   </div>
-   </div>
- </div>
- <footer class="item-remove">
+</div>
+</main>
+<footer>
   <div class="notification">
    <img src="/assets/warning-circle-filled.svg" alt="">
    <span>O item foi removido da lista</span>
   </div>
-  <div class="exit-notification">
+  <div class="exit-notification" id="exit-notification">
     <img src="/assets/delete-small.svg" alt="">
   </div>
  </footer>
-</main>
+
 
 <script src="scripts.js"></script>
 </body>
